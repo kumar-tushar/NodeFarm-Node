@@ -6,7 +6,7 @@ const replaceTemplate = require("./modules/replaceTemplate");
 const templateOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, "utf-8");
 const templateCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, "utf-8");
 const templateProduct = fs.readFileSync(`${__dirname}/templates/template-product.html`, "utf-8");
-const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf-8");
+const data = fs.readFileSync(`${__dirname}/data/data.json`, "utf-8");
 const dataObject = JSON.parse(data);
 
 const server = http.createServer((req, res) => {
